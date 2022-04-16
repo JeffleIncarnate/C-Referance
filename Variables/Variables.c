@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-int main() {
+int main(void) {
   int characterAge = 15;
   char characterName[] = "Dhruv Rayat";
   bool isMale = true;
