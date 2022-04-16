@@ -19,6 +19,12 @@ int main(void) {
   // Float: Floating point decimals
   float gpa = 14.243;
 
+  // This is a constant varaible, so it cant chang
+  // All constants need to be in capital (Good practice)
+  const int NUM = 10;
+
+  printf("%d\n", NUM);
+
   // Print Character name "%s" stands for string as a placeholder for the string var
   printf("Character Name: %s \n", characterName);
 
