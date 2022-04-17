@@ -10,9 +10,9 @@ int main() {
   age = printf("Enter your name: ");
 
   // This is better, but can only store one number
-  scandf("%s", name)
+  scanf("%s", name);
   // General, can store more than one word
-  fgets(name, 20, stdin);
+  // fgets(name, 20, stdin);
 
   printf("Your name is %s!", name);
 
