@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Global Variable
+int isGlobal = 5;
+
 // You need this to get a bool variable with C
 #include <stdbool.h>
 
