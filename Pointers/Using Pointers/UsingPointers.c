@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-int  var = 20;   /* actual variable declaration */
+   int  var = 20;   /* actual variable declaration */
    int  *ip;        /* pointer variable declaration */
 
    ip = &var;  /* store address of var in pointer variable*/

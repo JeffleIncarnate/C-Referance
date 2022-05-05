@@ -2,12 +2,9 @@
 #include <stdlib.h>
 
 int main() {
-  int age;
-  double gpa;
-  char grade;
   char name[20];
 
-  age = printf("Enter your name: ");
+  printf("Enter your name: ");
 
   // This is better, but can only store one number
   scanf("%s", name);
