@@ -14,7 +14,7 @@ int main() {
     struct Student kid1;
 
     // Fill it with info
-    strcpy( kid1.firstName, "Dhruv" );
+    strcpy( kid1.firstName, "akdjfhksjdhfksjdfjkhd" );
     strcpy( kid1.lastName, "Rayat" );
     kid1.age = 15;
 
@@ -26,6 +26,5 @@ int main() {
     return 0;
 }
 /*
-GO TO THIS WEBSITE FOR MORE INFO ON STRUCTS
-https://www.tutorialspoint.com/cprogramming/c_structures.htm 
+GO TO THIS WEBSITE FOR MORE INFO ON STRUCTS: https://www.tutorialspoint.com/cprogramming/c_structures.htm
  */
