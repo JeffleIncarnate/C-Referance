@@ -11,6 +11,6 @@ int main() {
     printf("Adress of var1 varaible is: %x\n", var1);        
     printf("Adress of var2 varaible is: %x\n", var2);    
 
-    // Retun
+    // Return
     return 0;
 }
