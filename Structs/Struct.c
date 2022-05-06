@@ -14,7 +14,7 @@ int main() {
     struct Student kid1;
 
     // Fill it with info
-    strcpy( kid1.firstName, "akdjfhksjdhfksjdfjkhd" );
+    strcpy( kid1.firstName, "Dhruv" );
     strcpy( kid1.lastName, "Rayat" );
     kid1.age = 15;
 
