@@ -1,0 +1,5 @@
+#include <stdio.h> // Standdard Input and Output (scanf, printf, fgets)
+#include <string.h> // String function strlen
+#include <ctype.h> // toupper, tolower
+
+These are good libraries to add to a C file
