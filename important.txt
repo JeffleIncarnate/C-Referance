@@ -1,5 +1,9 @@
 #include <stdio.h> // Standdard Input and Output (scanf, printf, fgets)
 #include <string.h> // String function strlen
 #include <ctype.h> // toupper, tolower
+#includ <stdlib.h> // For Dynamic memory management
 
 These are good libraries to add to a C file
+
+1 int is 1 byte OR 8 bits
+Ints are 4 bytes long: 32
