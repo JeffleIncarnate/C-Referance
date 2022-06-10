@@ -5,8 +5,8 @@ int main() {
     // Variables
     char from[10];
     char to[10];
-    int amount;
-    int converted;
+    double amount;
+    double converted;
 
     // Welcome
     printf("Welcome to the best Unit Converter! (only length)\n");
@@ -21,68 +21,96 @@ int main() {
     printf(": ");
     scanf("%s", from);
 
+    // Space
+    printf("\n");
+
     // Convert to
     printf("Please select a the unit you'd like to convert to: \n");
     printf("km (kilometres), m (metre), cm, (centimetre), mm (milimetre)\n");
     printf(": ");
     scanf("%s", to);
 
+    // Space
+    printf("\n");
+
+    // Amount
+    printf("Please enter amount you'd like to convert: ");
+    scanf("%lf", &amount);
+
     // Logic
-    printf("%s\n", from);
+    // KM 
     if (strcmp(from, "km") == 0) 
     {
         if (strcmp(to, "m") == 0) 
         {
-            printf("KM TO M");
+            converted = amount * 1000;
+            printf("%lf", converted);
         } 
         else if (strcmp(to, "cm") == 0) 
         {
-            printf("KM to cm");
+            converted = amount * 100000;
+            printf("%lf", converted);
         }
         else if (strcmp(to, "mm") == 0) {
-            printf("KM TO MM");
+            converted = amount * 1000000;
+            printf("%lf", converted);
         }
     } 
+    
+    // M
     if (strcmp(from, "m") == 0) 
     {
         if (strcmp(to, "km") == 0) 
         {
-            printf("M TO KM");
+            converted = amount / 1000;
+            printf("%lf", converted);
         } 
         else if (strcmp(to, "cm") == 0) 
         {
-            printf("M TO CM");
+            converted = amount * 100;
+            printf("%lf", converted);
         }
         else if (strcmp(to, "mm") == 0) {
-            printf("M TO MM");
+            converted = amount * 1000;
+            printf("%lf", converted);
         }
     } 
+    
+    // CM
     if (strcmp(from, "cm") == 0) 
     {
         if (strcmp(to, "km") == 0) 
         {
-            printf("CM TO KM");
+            converted = amount / 100000;
+            printf("%lf", converted);
         } 
         else if (strcmp(to, "m") == 0) 
         {
-            printf("CM TO M");
+            converted = amount / 100;
+            printf("%lf", converted);
         }
         else if (strcmp(to, "mm") == 0) {
-            printf("CM TO MM");
+            converted = amount * 10;
+            printf("%lf", converted);
         }
     } 
+    
+    // MM
     if (strcmp(from, "mm") == 0) 
     {
         if (strcmp(to, "km") == 0) 
         {
-            printf("MM TO KM");
+            converted = amount / 1000000;
+            printf("%lf", converted);
         } 
         else if (strcmp(to, "m") == 0) 
         {
-            printf("MM TO M");
+            converted = amount / 1000;
+            printf("%lf", converted);
         }
         else if (strcmp(to, "cm") == 0) {
-            printf("MM TO CM");
+            converted = amount / 10;
+            printf("%lf", converted);
         }
     } 
 
