@@ -2,28 +2,34 @@
 #include <math.h>
 #include <string.h>
 
-// Get Input
-// 10, seperated by a comma 1 or 2
-// Whichever one get's more votes, is the winner
-
 int main() {
-    char input[50];
-    char *point;
+    char input[100];
+    int party1 = 0;
+    int party2 = 0;
 
-    printf("Please enter 10 values entered by a ,\n");
-    printf("E.g: 1, 2, 3, 4, 5, 6, 7\n");
-    printf(": ");
-    
-    fgets(input, 50, stdin);
+    printf("Enter the Numbers: ");
+    scanf("%[^\n]", input);
 
-    // Splitting
-    int size = sizeof(input) / sizeof(input[0]);
+    int i = 0;
+    while (input[i] != '\0') {
+        if (input[i] == ',') {
+            input[i] = ' ';
+        }
+        i++;
+    }
 
-    printf("%d", size);
-
-    // for (int i = 0; i < 10; i++) {
-        
-    // }
+    int j = -1;
+    while (input[j] != '\0') {
+        j++;
+        if (input[j] == '1') {
+            printf("Y E S\n");
+        } else if (input[j] == '2') {
+            printf("Nah bro\n");
+        } else {}
+    }
+   
+    printf("Party 1: %d\n", party1);
+    printf("Party 2: %d\n", party2);
 
     return 0;
 }
