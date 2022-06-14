@@ -17,15 +17,15 @@ int main() {
         }
         i++;
     }
-
-    int j = -1;
-    while (input[j] != '\0') {
-        j++;
-        if (input[j] == '1') {
-            printf("Y E S\n");
-        } else if (input[j] == '2') {
-            printf("Nah bro\n");
-        } else {}
+    
+    char *token = strtok(input, " ");
+    while (token != NULL) {
+        if (strcmp(token, "1") == 0) {
+            party1++;
+        } else if (strcmp(token, "2") == 0) {
+            party2++;
+        }
+        token = strtok(NULL, " ");
     }
    
     printf("Party 1: %d\n", party1);
